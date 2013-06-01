@@ -1,7 +1,9 @@
+# Mac OS Generated File #
+.DS_Store
+
+# Java Compiled File #
 *.class
 
-# Package Files #
-*.jar
+# Java Package Files #
 *.war
 *.ear
-.DS_Store
