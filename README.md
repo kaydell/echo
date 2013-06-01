@@ -1,7 +1,7 @@
-echo
+echo client/server
 ===
 
-An exercise in Java sockets and client/server software
+"echo client/server" is an exercise in Java sockets and client/server software and an exercise in collaboration.
 
 This project consists primarily of two objects a client (an instance of EchoClient) and a server
 (an instance of EchoServer).
