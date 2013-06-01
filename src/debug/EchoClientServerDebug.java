@@ -24,7 +24,7 @@ public class EchoClientServerDebug {
 		
 		// start the server
 		EchoServer server = new EchoServer(portNum);
-		server.start();
+		server.start();  
 		
 		// create the client
 		EchoClient client = new EchoClient(localhost,portNum);
