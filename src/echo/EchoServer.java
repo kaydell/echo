@@ -1,4 +1,4 @@
-package us.kaydell.exercises.echo;
+package echo;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -50,20 +50,24 @@ public class EchoServer
 				socket = serverSocket.accept();
 				
 				// create a BufferedReader from the Socket's InputStream
-				BufferedReader r = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+				BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 				
 				// create a PrintWriter from the Socket's OutputStream
 				PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-				out.println("Welcome to the Java EchoServer. Type 'bye' to close.");
+				out.println("Connection made to EchoServer");
 				String line;
 				do {
 					// read a line from the client
-					line = r.readLine();
+					line = in.readLine();
 					
-					// if something was read then echo it back to the client
-					if (line != null)
-						out.println("Got: "+ line);
-				} while (!line.trim().equals("bye"));
+					// if line is null, then the connection was lost
+					if (line == null) {
+						System.err.println("Echo Server: The connections seems to have been lost");
+						break;
+					} else {
+						out.println(line);
+					}
+				} while (!line.trim().equalsIgnoreCase(EchoUtils.BYE));
 			}
 		} catch (IOException e) {
 			System.err.println("IOException in echo server while processing requests");

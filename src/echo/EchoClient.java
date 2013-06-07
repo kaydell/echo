@@ -1,7 +1,7 @@
 /**
  * It's always a good idea to use a package other than the default package.
  */
-package us.kaydell.exercises.echo;
+package echo;
 
 /**
  * I like to specify each class imported rather than using
@@ -28,15 +28,14 @@ import java.net.Socket;
  *
  */
 public class EchoClient implements Closeable {
-	
+
 	/**
 	 * private instance variables
 	 */
-	private boolean isSocketOpen = false;
 	private Socket socket = null;
 	private BufferedReader in = null;
 	private PrintWriter out = null;
-	
+
 	/**
 	 * This constructor accepts an ipAddress and the port number of the server 
 	 * to try to connect o.
@@ -47,23 +46,24 @@ public class EchoClient implements Closeable {
 	 * 
 	 */
 	public EchoClient(String ipAddress, int portNum) throws IOException {
-		
+
 		try {
-		// create a Socket and connect to the server which is running on the same computer on port number 9999
-		socket = new Socket(ipAddress, portNum);
-		
-		// use the input stream of the Socket and use it to create a BufferedReader
-		in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-		
-		// use the OutputStream of the Socket and use it to create a PrintWriter
-		out = new PrintWriter(socket.getOutputStream(), true);
-		
+			// create a Socket and connect to the server which is running on the same computer on port number 9999
+			socket = new Socket(ipAddress, portNum);
+
+			// use the input stream of the Socket and use it to create a BufferedReader
+			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+
+			// use the OutputStream of the Socket and use it to create a PrintWriter
+			final boolean AUTO_FLUSH = true;
+			out = new PrintWriter(socket.getOutputStream(), AUTO_FLUSH);
+
 		} catch (ConnectException e) {
-			System.err.println("ConnectionException: could not connect to the server. ");
+			System.err.println("ConnectionException: could not connect to the server: " + e);
 		}
-		
+
 	}
-	
+
 	/**
 	 * This constructor uses the default values for ip address and port number
 	 * to try to connect with a server.
@@ -72,6 +72,10 @@ public class EchoClient implements Closeable {
 	 */
 	public EchoClient() throws IOException {
 		this(EchoUtils.LOCAL_HOST, EchoUtils.DEFAULT_PORT_NUM);
+	}
+	
+	public boolean isConnected() {
+		return socket != null && socket.isConnected();
 	}
 
 	/**
@@ -84,7 +88,7 @@ public class EchoClient implements Closeable {
 	public String receiveMessage() throws IOException {
 		return in.readLine();
 	}
-	
+
 	/**
 	 * This method writes a message to the echo server.
 	 * 
@@ -93,16 +97,15 @@ public class EchoClient implements Closeable {
 	public void sendMessage(String message) {
 		out.println(message);
 	}
-	
+
 	/**
 	 * This method is called to close all IO objects that this echo client object
 	 * has open. TODO: close "in" and "out".
 	 */
 	@Override
 	public void close() throws IOException {
-		if (isSocketOpen) {
+		if (socket != null && !socket.isClosed()) {
 			socket.close();
-			isSocketOpen = false;
 		}
 	}
 

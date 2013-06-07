@@ -1,4 +1,4 @@
-package tests;
+package echo;
 
 /**
  * This class will run automated unit tests for the class EchoClientConsole

@@ -1,4 +1,4 @@
-package us.kaydell.exercises.echo;
+package echo;
 
 import java.io.IOException;
 import java.net.BindException;
@@ -36,7 +36,9 @@ public class EchoServerDaemon {
 		}
 		
 		// start the server object
+		System.out.println("Echo Server: starting.");
 		server.start();
+		System.out.println("Echo Server: exiting.");
 
 	}
 

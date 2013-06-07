@@ -1,9 +1,6 @@
-package debug;
+package echo;
 
 import java.io.IOException;
-
-import us.kaydell.exercises.echo.EchoClient;
-import us.kaydell.exercises.echo.EchoServer;
 
 /**
  * This class will test the classes EchoClient and EchoServer
@@ -29,13 +26,16 @@ public class EchoClientServerDebug {
 		// create the client
 		EchoClient client = new EchoClient(localhost,portNum);
 		
-		// have the client send the message "BYE" this should cause
+		// have the client send the message BYE this should cause
 		// the server to echo the message and quit.
-		String message = "Bye";
-		client.sendMessage("Bye");
+		String message = EchoUtils.BYE;
+		client.sendMessage(message);
 		
+		// test the reply to make sure that it was the same message that was sent.
 		String reply = client.receiveMessage();
-		if (!message.equals(reply)) {
+		if (reply.equals(EchoUtils.BYE)) {
+			System.out.println("Success: received the same message that was sent.");
+		} else {
 			System.err.println("Error: sent the message: '" + message + "' and received the reply: '" + reply + "'");
 		}
 
