@@ -47,6 +47,8 @@ public class EchoClient implements Closeable {
 	 */
 	private PrintWriter out = null;
 
+	private Log log = null;
+			
 	/**
 	 * This constructor accepts an ipAddress and the port number of the server 
 	 * to specify which server to connect to.
@@ -56,11 +58,13 @@ public class EchoClient implements Closeable {
 	 * @throws IOException Thrown for any kind of IO error.
 	 * 
 	 */
-	public EchoClient(String ipAddress, int portNum) throws IOException {
+	public EchoClient(String ipAddress, int portNum, Log log) throws IOException {
 		
-		System.out.println("C: Entering constructor");
-		System.out.println("C: IP Address: " + ipAddress + " portNum: " + portNum);
+		this.log = log;
 
+		log.println("C: Entering constructor");
+		log.println("C: IP Address: " + ipAddress + " portNum: " + portNum);
+		
 		try {
 			// create a Socket and connect to the server which is running on the same computer on port number 9999
 			socket = new Socket(ipAddress, portNum);
@@ -69,14 +73,14 @@ public class EchoClient implements Closeable {
 			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
 			// use the OutputStream of the Socket and use it to create a PrintWriter
-			final boolean AUTO_FLUSH = true;
-			out = new PrintWriter(socket.getOutputStream(), AUTO_FLUSH);
+			out = new PrintWriter(socket.getOutputStream(), EchoUtils.AUTO_FLUSH);
 
 		} catch (ConnectException e) {
 			System.err.println("C: ConnectionException: could not connect to the server: " + e);
+			throw e;
 		}
 
-		System.out.println("C: Exiting constructor");
+		log.println("C: Exiting constructor");
 	}
 
 	/**
@@ -85,8 +89,8 @@ public class EchoClient implements Closeable {
 	 * 
 	 * @throws IOException
 	 */
-	public EchoClient() throws IOException {
-		this(EchoUtils.LOCAL_HOST, EchoUtils.DEFAULT_PORT_NUM);
+	public EchoClient(Log log) throws IOException {
+		this(EchoUtils.LOCAL_HOST, EchoUtils.DEFAULT_PORT_NUM, log);
 	}
 	
 	/**
@@ -96,9 +100,9 @@ public class EchoClient implements Closeable {
 	 * @return Returns whether this client is still connected to the server or not.
 	 */
 	public boolean isConnected() {
-		System.out.println("C: Entering isConnected()");
+		log.println("C: Entering isConnected()");
 		boolean isConnected = (socket != null && socket.isConnected());
-		System.out.println("C: Exiting isConnected() isConnected: " + isConnected);
+		log.println("C: Exiting isConnected() isConnected: " + isConnected);
 		return isConnected;
 	}
 
@@ -108,9 +112,9 @@ public class EchoClient implements Closeable {
 	 * @throws IOException Thrown when there is an error reading from the echo server
 	 */
 	public String receiveMessage() throws IOException {
-		System.out.println("C: Entering receiveMessage()");
+		log.println("C: Entering receiveMessage()");
 		String message = in.readLine();
-		System.out.println("C: Exiting receiveMessage() message: " + message);
+		log.println("C: Exiting receiveMessage() message: " + message);
 		return message;
 	}
 
@@ -120,9 +124,9 @@ public class EchoClient implements Closeable {
 	 * @param message
 	 */
 	public void sendMessage(String message) {
-		System.out.println("C: Entering sendMessage(), message: " + message);
+		log.println("C: Entering sendMessage(), message: " + message);
 		out.println(message);
-		System.out.println("C: Exiting receiveMessage()");
+		log.println("C: Exiting receiveMessage()");
 	}
 
 	/**
@@ -131,11 +135,11 @@ public class EchoClient implements Closeable {
 	 */
 	@Override
 	public void close() throws IOException {
-		System.out.println("C: Entering close()");
+		log.println("C: Entering close()");
 		if (socket != null && !socket.isClosed()) {
 			socket.close();
 		}
-		System.out.println("C: Exiting close()");
+		log.println("C: Exiting close()");
 	}
 
 }

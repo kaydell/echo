@@ -1,0 +1,1033 @@
+S: Entering the constructor for EchoServer
+S: Exiting the constructor for EchoServer
+S: about to call server.start().
+S: about to call serverSocket.accept()
+S: just returned from server.start().
+C: setting up local variables
+C: about to create EchoClient object
+C: Entering constructor
+C: IP Address: null portNum: 9000
+S: just returned from serverSocket.accept()
+S: about to create a ClientServicer
+S: Entering the constructor for ClientServicer.
+S: Exiting the constructor for ClientServicer.
+S: just returned from creating a ClientServicer
+S: about to call serverSocket.accept()
+S: Entering the method serve()
+S: About to send welcome message to the client
+Sending the message: Connection established! to the client
+Sent the message: Connection established! to the client
+S: Just sent welcome message to the client
+S: about to read message from the client
+C: Exiting constructor
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+C: Exiting receiveMessage() message: Connection established!
+C: just returned from receiveMessage() messageIn: Connection established!
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 10
+C: sending the message to the server
+C: Entering sendMessage(), message: 10
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 10
+S: About to send message back to the client: 10
+Sending the message: 10 to the client
+Sent the message: 10 to the client
+S: Just returned from sending message back to the client:10
+S: about to read message from the client
+C: Exiting receiveMessage() message: 10
+C: just returned from receiveMessage() messageIn: 10
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 20
+C: sending the message to the server
+C: Entering sendMessage(), message: 20
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 20
+S: About to send message back to the client: 20
+Sending the message: 20 to the client
+Sent the message: 20 to the client
+S: Just returned from sending message back to the client:20
+S: about to read message from the client
+C: Exiting receiveMessage() message: 20
+C: just returned from receiveMessage() messageIn: 20
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 30
+C: sending the message to the server
+C: Entering sendMessage(), message: 30
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 30
+S: About to send message back to the client: 30
+Sending the message: 30 to the client
+Sent the message: 30 to the client
+S: Just returned from sending message back to the client:30
+S: about to read message from the client
+C: Exiting receiveMessage() message: 30
+C: just returned from receiveMessage() messageIn: 30
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: bye
+C: sending the message to the server
+C: Entering sendMessage(), message: bye
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: bye
+S: About to send message back to the client: bye
+Sending the message: bye to the client
+Sent the message: bye to the client
+S: Just returned from sending message back to the client:bye
+C: Exiting receiveMessage() message: bye
+S: about to read message from the client
+C: just returned from receiveMessage() messageIn: bye
+C: Entering close()
+S: just read message from the client: null
+C: Exiting close()
+C: exiting main()
+S: read a null string, breaking of of loop in the serve() methodnull
+S: Entering the constructor for EchoServer
+S: Exiting the constructor for EchoServer
+S: about to call server.start().
+S: about to call serverSocket.accept()
+S: just returned from server.start().
+C: setting up local variables
+C: about to create EchoClient object
+C: Entering constructor
+C: IP Address: null portNum: 9000
+S: just returned from serverSocket.accept()
+S: about to create a ClientServicer
+S: Entering the constructor for ClientServicer.
+S: Exiting the constructor for ClientServicer.
+S: just returned from creating a ClientServicer
+S: about to call serverSocket.accept()
+S: Entering the method serve()
+S: About to send welcome message to the client
+Sending the message: Connection established! to the client
+Sent the message: Connection established! to the client
+S: Just sent welcome message to the client
+S: about to read message from the client
+C: Exiting constructor
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+C: Exiting receiveMessage() message: Connection established!
+C: just returned from receiveMessage() messageIn: Connection established!
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 10
+C: sending the message to the server
+C: Entering sendMessage(), message: 10
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+S: just read message from the client: 10
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: About to send message back to the client: 10
+Sending the message: 10 to the client
+Sent the message: 10 to the client
+C: Exiting receiveMessage() message: 10
+C: just returned from receiveMessage() messageIn: 10
+S: Just returned from sending message back to the client:10
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+S: about to read message from the client
+C: The user typed in: 20
+C: sending the message to the server
+C: Entering sendMessage(), message: 20
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 20
+S: About to send message back to the client: 20
+Sending the message: 20 to the client
+Sent the message: 20 to the client
+S: Just returned from sending message back to the client:20
+S: about to read message from the client
+C: Exiting receiveMessage() message: 20
+C: just returned from receiveMessage() messageIn: 20
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 30
+C: sending the message to the server
+C: Entering sendMessage(), message: 30
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 30
+S: About to send message back to the client: 30
+Sending the message: 30 to the client
+Sent the message: 30 to the client
+S: Just returned from sending message back to the client:30
+S: about to read message from the client
+C: Exiting receiveMessage() message: 30
+C: just returned from receiveMessage() messageIn: 30
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: bye
+C: sending the message to the server
+C: Entering sendMessage(), message: bye
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: bye
+S: About to send message back to the client: bye
+Sending the message: bye to the client
+Sent the message: bye to the client
+S: Just returned from sending message back to the client:bye
+S: about to read message from the client
+C: Exiting receiveMessage() message: bye
+C: just returned from receiveMessage() messageIn: bye
+C: Entering close()
+C: Exiting close()
+C: exiting main()
+S: just read message from the client: null
+S: read a null string, breaking of of loop in the serve() methodnull
+S: Entering the constructor for EchoServer
+S: Exiting the constructor for EchoServer
+S: about to call server.start().
+S: about to call serverSocket.accept()
+S: just returned from server.start().
+C: setting up local variables
+C: about to create EchoClient object
+C: Entering constructor
+C: IP Address: null portNum: 9000
+S: just returned from serverSocket.accept()
+S: about to create a ClientServicer
+S: Entering the constructor for ClientServicer.
+S: Exiting the constructor for ClientServicer.
+S: just returned from creating a ClientServicer
+S: about to call serverSocket.accept()
+S: Entering the method serve()
+S: About to send welcome message to the client
+C: Exiting constructor
+Sending the message: Connection established! to the client
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+Sent the message: Connection established! to the client
+S: Just sent welcome message to the client
+S: about to read message from the client
+C: Exiting receiveMessage() message: Connection established!
+C: just returned from receiveMessage() messageIn: Connection established!
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 10
+C: sending the message to the server
+C: Entering sendMessage(), message: 10
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 10
+S: About to send message back to the client: 10
+Sending the message: 10 to the client
+Sent the message: 10 to the client
+S: Just returned from sending message back to the client:10
+S: about to read message from the client
+C: Exiting receiveMessage() message: 10
+C: just returned from receiveMessage() messageIn: 10
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 20
+C: sending the message to the server
+C: Entering sendMessage(), message: 20
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 20
+S: About to send message back to the client: 20
+Sending the message: 20 to the client
+Sent the message: 20 to the client
+S: Just returned from sending message back to the client:20
+S: about to read message from the client
+C: Exiting receiveMessage() message: 20
+C: just returned from receiveMessage() messageIn: 20
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 30
+C: sending the message to the server
+C: Entering sendMessage(), message: 30
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 30
+S: About to send message back to the client: 30
+Sending the message: 30 to the client
+Sent the message: 30 to the client
+S: Just returned from sending message back to the client:30
+S: about to read message from the client
+C: Exiting receiveMessage() message: 30
+C: just returned from receiveMessage() messageIn: 30
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: bye
+C: sending the message to the server
+C: Entering sendMessage(), message: bye
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+S: just read message from the client: bye
+C: Entering receiveMessage()
+S: About to send message back to the client: bye
+Sending the message: bye to the client
+Sent the message: bye to the client
+C: Exiting receiveMessage() message: bye
+S: Just returned from sending message back to the client:bye
+C: just returned from receiveMessage() messageIn: bye
+S: about to read message from the client
+C: Entering close()
+C: Exiting close()
+C: exiting main()
+S: just read message from the client: null
+S: read a null string, breaking of of loop in the serve() methodnull
+S: Entering the constructor for EchoServer
+S: Exiting the constructor for EchoServer
+S: about to call server.start().
+S: just returned from server.start().
+C: setting up local variables
+S: about to call serverSocket.accept()
+C: about to create EchoClient object
+C: Entering constructor
+C: IP Address: null portNum: 9000
+S: just returned from serverSocket.accept()
+S: about to create a ClientServicer
+S: Entering the constructor for ClientServicer.
+S: Exiting the constructor for ClientServicer.
+S: just returned from creating a ClientServicer
+S: about to call serverSocket.accept()
+S: Entering the method serve()
+S: About to send welcome message to the client
+Sending the message: Connection established! to the client
+Sent the message: Connection established! to the client
+S: Just sent welcome message to the client
+S: about to read message from the client
+C: Exiting constructor
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+C: Exiting receiveMessage() message: Connection established!
+C: just returned from receiveMessage() messageIn: Connection established!
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 10
+C: sending the message to the server
+C: Entering sendMessage(), message: 10
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 10
+S: About to send message back to the client: 10
+Sending the message: 10 to the client
+Sent the message: 10 to the client
+S: Just returned from sending message back to the client:10
+S: about to read message from the client
+C: Exiting receiveMessage() message: 10
+C: just returned from receiveMessage() messageIn: 10
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 20
+C: sending the message to the server
+C: Entering sendMessage(), message: 20
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 20
+S: About to send message back to the client: 20
+Sending the message: 20 to the client
+Sent the message: 20 to the client
+S: Just returned from sending message back to the client:20
+S: about to read message from the client
+C: Exiting receiveMessage() message: 20
+C: just returned from receiveMessage() messageIn: 20
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 30
+C: sending the message to the server
+C: Entering sendMessage(), message: 30
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 30
+S: About to send message back to the client: 30
+Sending the message: 30 to the client
+Sent the message: 30 to the client
+S: Just returned from sending message back to the client:30
+S: about to read message from the client
+C: Exiting receiveMessage() message: 30
+C: just returned from receiveMessage() messageIn: 30
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: bye
+C: sending the message to the server
+C: Entering sendMessage(), message: bye
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: bye
+S: About to send message back to the client: bye
+Sending the message: bye to the client
+Sent the message: bye to the client
+C: Exiting receiveMessage() message: bye
+C: just returned from receiveMessage() messageIn: bye
+C: Entering close()
+C: Exiting close()
+C: exiting main()
+S: Just returned from sending message back to the client:bye
+S: about to read message from the client
+S: just read message from the client: null
+S: read a null string, breaking of of loop in the serve() methodnull
+S: Entering the constructor for EchoServer
+S: Exiting the constructor for EchoServer
+S: about to call server.start().
+S: just returned from server.start().
+S: about to call serverSocket.accept()
+C: setting up local variables
+C: about to create EchoClient object
+C: Entering constructor
+C: IP Address: null portNum: 9000
+C: Exiting constructor
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just returned from serverSocket.accept()
+S: about to create a ClientServicer
+S: Entering the constructor for ClientServicer.
+S: Exiting the constructor for ClientServicer.
+S: just returned from creating a ClientServicer
+S: about to call serverSocket.accept()
+S: Entering the method serve()
+S: About to send welcome message to the client
+Sending the message: Connection established! to the client
+Sent the message: Connection established! to the client
+S: Just sent welcome message to the client
+S: about to read message from the client
+C: Exiting receiveMessage() message: Connection established!
+C: just returned from receiveMessage() messageIn: Connection established!
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 10
+C: sending the message to the server
+C: Entering sendMessage(), message: 10
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 10
+S: About to send message back to the client: 10
+Sending the message: 10 to the client
+Sent the message: 10 to the client
+S: Just returned from sending message back to the client:10
+S: about to read message from the client
+C: Exiting receiveMessage() message: 10
+C: just returned from receiveMessage() messageIn: 10
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: Entering close()
+C: Exiting close()
+S: just read message from the client: null
+S: read a null string, breaking of of loop in the serve() methodnull
+S: Entering the constructor for EchoServer
+S: Exiting the constructor for EchoServer
+S: about to call server.start().
+S: just returned from server.start().
+C: setting up local variables
+S: about to call serverSocket.accept()
+C: about to create EchoClient object
+C: Entering constructor
+C: IP Address: null portNum: 9000
+S: just returned from serverSocket.accept()
+S: about to create a ClientServicer
+S: Entering the constructor for ClientServicer.
+C: Exiting constructor
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: Exiting the constructor for ClientServicer.
+S: just returned from creating a ClientServicer
+S: about to call serverSocket.accept()
+S: Entering the method serve()
+S: About to send welcome message to the client
+Sending the message: Connection established! to the client
+Sent the message: Connection established! to the client
+S: Just sent welcome message to the client
+S: about to read message from the client
+C: Exiting receiveMessage() message: Connection established!
+C: just returned from receiveMessage() messageIn: Connection established!
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 10
+C: sending the message to the server
+C: Entering sendMessage(), message: 10
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 10
+S: About to send message back to the client: 10
+Sending the message: 10 to the client
+Sent the message: 10 to the client
+S: Just returned from sending message back to the client:10
+S: about to read message from the client
+C: Exiting receiveMessage() message: 10
+C: just returned from receiveMessage() messageIn: 10
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 20
+C: sending the message to the server
+C: Entering sendMessage(), message: 20
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 20
+S: About to send message back to the client: 20
+Sending the message: 20 to the client
+Sent the message: 20 to the client
+S: Just returned from sending message back to the client:20
+S: about to read message from the client
+C: Exiting receiveMessage() message: 20
+C: just returned from receiveMessage() messageIn: 20
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 30
+C: sending the message to the server
+C: Entering sendMessage(), message: 30
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 30
+S: About to send message back to the client: 30
+Sending the message: 30 to the client
+Sent the message: 30 to the client
+S: Just returned from sending message back to the client:30
+S: about to read message from the client
+C: Exiting receiveMessage() message: 30
+C: just returned from receiveMessage() messageIn: 30
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+S: Entering the constructor for EchoServer
+S: Exiting the constructor for EchoServer
+S: about to call server.start().
+S: about to call serverSocket.accept()
+S: just returned from server.start().
+C: setting up local variables
+C: about to create EchoClient object
+C: Entering constructor
+C: IP Address: null portNum: 9000
+C: Exiting constructor
+S: just returned from serverSocket.accept()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: about to create a ClientServicer
+S: Entering the constructor for ClientServicer.
+S: Exiting the constructor for ClientServicer.
+S: just returned from creating a ClientServicer
+S: about to call serverSocket.accept()
+S: Entering the method serve()
+S: About to send welcome message to the client
+Sending the message: Connection established! to the client
+Sent the message: Connection established! to the client
+S: Just sent welcome message to the client
+S: about to read message from the client
+C: Exiting receiveMessage() message: Connection established!
+C: just returned from receiveMessage() messageIn: Connection established!
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: hello?
+C: sending the message to the server
+C: Entering sendMessage(), message: hello?
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: hello?
+S: About to send message back to the client: hello?
+Sending the message: hello? to the client
+Sent the message: hello? to the client
+S: Just returned from sending message back to the client:hello?
+S: about to read message from the client
+C: Exiting receiveMessage() message: hello?
+C: just returned from receiveMessage() messageIn: hello?
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: what's up doc?
+C: sending the message to the server
+C: Entering sendMessage(), message: what's up doc?
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: what's up doc?
+S: About to send message back to the client: what's up doc?
+Sending the message: what's up doc? to the client
+Sent the message: what's up doc? to the client
+S: Just returned from sending message back to the client:what's up doc?
+S: about to read message from the client
+C: Exiting receiveMessage() message: what's up doc?
+C: just returned from receiveMessage() messageIn: what's up doc?
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 10
+C: sending the message to the server
+C: Entering sendMessage(), message: 10
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 10
+S: About to send message back to the client: 10
+Sending the message: 10 to the client
+Sent the message: 10 to the client
+S: Just returned from sending message back to the client:10
+S: about to read message from the client
+C: Exiting receiveMessage() message: 10
+C: just returned from receiveMessage() messageIn: 10
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: hello
+C: sending the message to the server
+C: Entering sendMessage(), message: hello
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: hello
+S: About to send message back to the client: hello
+Sending the message: hello to the client
+Sent the message: hello to the client
+S: Just returned from sending message back to the client:hello
+S: about to read message from the client
+C: Exiting receiveMessage() message: hello
+C: just returned from receiveMessage() messageIn: hello
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: deb
+C: sending the message to the server
+C: Entering sendMessage(), message: deb
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: deb
+S: About to send message back to the client: deb
+Sending the message: deb to the client
+Sent the message: deb to the client
+S: Just returned from sending message back to the client:deb
+S: about to read message from the client
+C: Exiting receiveMessage() message: deb
+C: just returned from receiveMessage() messageIn: deb
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: bye
+C: sending the message to the server
+C: Entering sendMessage(), message: bye
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: bye
+S: About to send message back to the client: bye
+Sending the message: bye to the client
+Sent the message: bye to the client
+S: Just returned from sending message back to the client:bye
+S: about to read message from the client
+C: Exiting receiveMessage() message: bye
+C: just returned from receiveMessage() messageIn: bye
+C: Entering close()
+C: Exiting close()
+C: exiting main()
+S: just read message from the client: null
+S: read a null string, breaking of of loop in the serve() methodnull
+S: Entering the constructor for EchoServer
+S: Exiting the constructor for EchoServer
+S: about to call server.start().
+S: about to call serverSocket.accept()
+S: just returned from server.start().
+C: setting up local variables
+C: about to create EchoClient object
+C: Entering constructor
+C: IP Address: null portNum: 9000
+S: just returned from serverSocket.accept()
+S: about to create a ClientServicer
+S: Entering the constructor for ClientServicer.
+S: Exiting the constructor for ClientServicer.
+S: just returned from creating a ClientServicer
+S: about to call serverSocket.accept()
+S: Entering the method serve()
+S: About to send welcome message to the client
+Sending the message: Connection established! to the client
+Sent the message: Connection established! to the client
+S: Just sent welcome message to the client
+S: about to read message from the client
+C: Exiting constructor
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+C: Exiting receiveMessage() message: Connection established!
+C: just returned from receiveMessage() messageIn: Connection established!
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: Entering close()
+C: Exiting close()
+S: just read message from the client: null
+S: read a null string, breaking of of loop in the serve() methodnull
+S: Entering the constructor for EchoServer
+S: Exiting the constructor for EchoServer
+S: about to call server.start().
+S: about to call serverSocket.accept()
+S: just returned from server.start().
+C: setting up local variables
+C: about to create EchoClient object
+C: Entering constructor
+C: IP Address: null portNum: 9000
+S: just returned from serverSocket.accept()
+S: about to create a ClientServicer
+S: Entering the constructor for ClientServicer.
+S: Exiting the constructor for ClientServicer.
+S: just returned from creating a ClientServicer
+S: about to call serverSocket.accept()
+S: Entering the method serve()
+S: About to send welcome message to the client
+Sending the message: Connection established! to the client
+C: Exiting constructor
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+Sent the message: Connection established! to the client
+S: Just sent welcome message to the client
+S: about to read message from the client
+C: Exiting receiveMessage() message: Connection established!
+C: just returned from receiveMessage() messageIn: Connection established!
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: Entering close()
+C: Exiting close()
+S: Entering the constructor for EchoServer
+S: Exiting the constructor for EchoServer
+S: about to call server.start().
+S: about to call serverSocket.accept()
+S: just returned from server.start().
+C: setting up local variables
+C: about to create EchoClient object
+C: Entering constructor
+C: IP Address: null portNum: 9000
+S: just returned from serverSocket.accept()
+S: about to create a ClientServicer
+C: Exiting constructor
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: Entering the constructor for ClientServicer.
+S: Exiting the constructor for ClientServicer.
+S: just returned from creating a ClientServicer
+S: about to call serverSocket.accept()
+S: Entering the method serve()
+S: About to send welcome message to the client
+Sending the message: Connection established! to the client
+Sent the message: Connection established! to the client
+S: Just sent welcome message to the client
+S: about to read message from the client
+C: Exiting receiveMessage() message: Connection established!
+C: just returned from receiveMessage() messageIn: Connection established!
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 10
+C: sending the message to the server
+C: Entering sendMessage(), message: 10
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 10
+S: About to send message back to the client: 10
+Sending the message: 10 to the client
+Sent the message: 10 to the client
+S: Just returned from sending message back to the client:10
+S: about to read message from the client
+C: Exiting receiveMessage() message: 10
+C: just returned from receiveMessage() messageIn: 10
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: hello
+C: sending the message to the server
+C: Entering sendMessage(), message: hello
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: hello
+S: About to send message back to the client: hello
+Sending the message: hello to the client
+Sent the message: hello to the client
+S: Just returned from sending message back to the client:hello
+S: about to read message from the client
+C: Exiting receiveMessage() message: hello
+C: just returned from receiveMessage() messageIn: hello
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: Kaydell Leavitt
+C: sending the message to the server
+C: Entering sendMessage(), message: Kaydell Leavitt
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: Kaydell Leavitt
+S: About to send message back to the client: Kaydell Leavitt
+Sending the message: Kaydell Leavitt to the client
+Sent the message: Kaydell Leavitt to the client
+S: Just returned from sending message back to the client:Kaydell Leavitt
+S: about to read message from the client
+C: Exiting receiveMessage() message: Kaydell Leavitt
+C: just returned from receiveMessage() messageIn: Kaydell Leavitt
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: BYE
+C: sending the message to the server
+C: Entering sendMessage(), message: BYE
+S: just read message from the client: BYE
+S: About to send message back to the client: BYE
+Sending the message: BYE to the client
+Sent the message: BYE to the client
+S: Just returned from sending message back to the client:BYE
+S: about to read message from the client
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+C: Exiting receiveMessage() message: BYE
+C: just returned from receiveMessage() messageIn: BYE
+C: Entering close()
+C: Exiting close()
+C: exiting main()
+S: just read message from the client: null
+S: read a null string, breaking of of loop in the serve() methodnull
+S: Entering the constructor for EchoServer
+S: Entering the constructor for EchoServer
+S: Exiting the constructor for EchoServer
+S: about to call server.start().
+S: just returned from server.start().
+S: about to call serverSocket.accept()
+C: setting up local variables
+C: about to create EchoClient object
+C: Entering constructor
+C: IP Address: null portNum: 9000
+S: just returned from serverSocket.accept()
+S: about to create a ClientServicer
+C: Exiting constructor
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: Entering the constructor for ClientServicer.
+S: Exiting the constructor for ClientServicer.
+S: just returned from creating a ClientServicer
+S: about to call serverSocket.accept()
+S: Entering the method serve()
+S: About to send welcome message to the client
+Sending the message: Connection established! to the client
+Sent the message: Connection established! to the client
+S: Just sent welcome message to the client
+S: about to read message from the client
+C: Exiting receiveMessage() message: Connection established!
+C: just returned from receiveMessage() messageIn: Connection established!
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 10
+C: sending the message to the server
+C: Entering sendMessage(), message: 10
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 10
+S: About to send message back to the client: 10
+Sending the message: 10 to the client
+Sent the message: 10 to the client
+S: Just returned from sending message back to the client:10
+S: about to read message from the client
+C: Exiting receiveMessage() message: 10
+C: just returned from receiveMessage() messageIn: 10
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 20
+C: sending the message to the server
+C: Entering sendMessage(), message: 20
+S: just read message from the client: 20
+S: About to send message back to the client: 20
+Sending the message: 20 to the client
+Sent the message: 20 to the client
+S: Just returned from sending message back to the client:20
+S: about to read message from the client
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+C: Exiting receiveMessage() message: 20
+C: just returned from receiveMessage() messageIn: 20
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 30
+C: sending the message to the server
+C: Entering sendMessage(), message: 30
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+S: just read message from the client: 30
+C: Entering receiveMessage()
+S: About to send message back to the client: 30
+Sending the message: 30 to the client
+Sent the message: 30 to the client
+S: Just returned from sending message back to the client:30
+C: Exiting receiveMessage() message: 30
+S: about to read message from the client
+C: just returned from receiveMessage() messageIn: 30
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: hello world
+C: sending the message to the server
+C: Entering sendMessage(), message: hello world
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: hello world
+S: About to send message back to the client: hello world
+Sending the message: hello world to the client
+Sent the message: hello world to the client
+S: Just returned from sending message back to the client:hello world
+S: about to read message from the client
+C: Exiting receiveMessage() message: hello world
+C: just returned from receiveMessage() messageIn: hello world
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: ?
+C: sending the message to the server
+C: Entering sendMessage(), message: ?
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+S: just read message from the client: ?
+C: Entering receiveMessage()
+S: About to send message back to the client: ?
+Sending the message: ? to the client
+Sent the message: ? to the client
+S: Just returned from sending message back to the client:?
+C: Exiting receiveMessage() message: ?
+S: about to read message from the client
+C: just returned from receiveMessage() messageIn: ?
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: byE
+C: sending the message to the server
+C: Entering sendMessage(), message: byE
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: byE
+S: About to send message back to the client: byE
+Sending the message: byE to the client
+Sent the message: byE to the client
+S: Just returned from sending message back to the client:byE
+S: about to read message from the client
+C: Exiting receiveMessage() message: byE
+C: just returned from receiveMessage() messageIn: byE
+C: Entering close()
+C: Exiting close()
+C: exiting main()
+S: just read message from the client: null
+S: read a null string, breaking of of loop in the serve() methodnull
+S: Exiting the run() method for ClientServicer
+S: Entering the constructor for EchoServer
+S: Entering the constructor for EchoServer
+S: Exiting the constructor for EchoServer
+S: about to call server.start().
+S: just returned from server.start().
+S: about to call serverSocket.accept()
+C: setting up local variables
+C: about to create EchoClient object
+C: Entering constructor
+C: IP Address: null portNum: 9000
+S: just returned from serverSocket.accept()
+S: about to create a ClientServicer
+C: Exiting constructor
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: Entering the constructor for ClientServicer.
+S: Exiting the constructor for ClientServicer.
+S: just returned from creating a ClientServicer
+S: about to call serverSocket.accept()
+S: Entering the method serve()
+S: About to send welcome message to the client
+Sending the message: Connection established! to the client
+Sent the message: Connection established! to the client
+S: Just sent welcome message to the client
+S: about to read message from the client
+C: Exiting receiveMessage() message: Connection established!
+C: just returned from receiveMessage() messageIn: Connection established!
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 10
+C: sending the message to the server
+C: Entering sendMessage(), message: 10
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 10
+S: About to send message back to the client: 10
+Sending the message: 10 to the client
+Sent the message: 10 to the client
+S: Just returned from sending message back to the client:10
+S: about to read message from the client
+C: Exiting receiveMessage() message: 10
+C: just returned from receiveMessage() messageIn: 10
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: 20
+C: sending the message to the server
+C: Entering sendMessage(), message: 20
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: 20
+S: About to send message back to the client: 20
+Sending the message: 20 to the client
+Sent the message: 20 to the client
+S: Just returned from sending message back to the client:20
+S: about to read message from the client
+C: Exiting receiveMessage() message: 20
+C: just returned from receiveMessage() messageIn: 20
+C: Enter a line of text to be echoed by the Echo Server. enter 'Bye' to quit: 
+C: The user typed in: bye
+C: sending the message to the server
+C: Entering sendMessage(), message: bye
+C: Exiting receiveMessage()
+C: The message was sent
+C: at the bottom of the loop in main()
+C: about to call receiveMessage()
+C: Entering receiveMessage()
+S: just read message from the client: bye
+S: About to send message back to the client: bye
+Sending the message: bye to the client
+Sent the message: bye to the client
+S: Just returned from sending message back to the client:bye
+S: about to read message from the client
+C: Exiting receiveMessage() message: bye
+C: just returned from receiveMessage() messageIn: bye
+C: Entering close()
+C: Exiting close()
+C: exiting main()
+S: just read message from the client: null
+S: read a null string, breaking of of loop in the serve() methodnull
+S: Exiting the run() method for ClientServicer
