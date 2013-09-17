@@ -31,14 +31,14 @@ public class EchoServerDaemon {
 		try {
 			server = new EchoServer(portNum);
 		} catch (BindException e) {
-			System.err.println("BindException: The server could not be started because the port is already in use.  The server may alreay be running or you may need to restart your computer.");
+			System.err.println("S: BindException: The server could not be started because the port is already in use.  The server may alreay be running or you may need to restart your computer.");
 			return;
 		}
 		
 		// start the server object
-		System.out.println("Echo Server: starting.");
+		System.out.println("S: about to call server.start().");
 		server.start();
-		System.out.println("Echo Server: exiting.");
+		System.out.println("S: just returned from server.start().");
 
 	}
 

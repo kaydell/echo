@@ -8,9 +8,7 @@ package echo;
  *
  */
 public class EchoUtils {
-	
 	final static String LOCAL_HOST = null;
 	final static int DEFAULT_PORT_NUM = 9000;
 	final static String BYE = "Bye";
-
 }
